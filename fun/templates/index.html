@@ -131,7 +131,7 @@
     <div class="chat-box" id="chat-box">
         <!-- Messages will appear here -->
     </div>
-    <audio id="valentine-audio" src="/static/val.mp3" preload="auto"></audio>
+    <source src="{{ url_for('static', filename='val.mp3') }}" type="audio/mp3">
     <div id="input-container">
         <input type="text" id="user-input" placeholder="Type your response here..." />
         <button id="send-btn" onclick="handleUserInput()">Send</button>
